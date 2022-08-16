@@ -15,7 +15,7 @@ COPY Gemfile* /tmp/
 # COPY yarn.lock /tmp/
 WORKDIR /tmp
 RUN gem install bundler -v 2.3.9
-RUN bundle install --jobs 5 --retry 5
+RUN bundle install --jobs 5 --retry 5 --without development test
 # RUN yarn install # not needed for APIs
 RUN mkdir /app
 WORKDIR /app
