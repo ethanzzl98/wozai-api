@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 source "https://rubygems.org"
+=======
+source 'https://gems.ruby-china.com/'
+>>>>>>> b575a4f58e0950eb406472fbcb025a303783bbbf
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
@@ -70,3 +74,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+<<<<<<< HEAD
+=======
+
+gem 'jwt'
+gem 'rest-client'
+>>>>>>> b575a4f58e0950eb406472fbcb025a303783bbbf
