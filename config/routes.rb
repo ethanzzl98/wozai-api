@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       post 'login', to: 'sessions#login', as: :login
+      resources :venues do
+        resources :checkins, only: [:create]
+      end
     end
   end
 end
