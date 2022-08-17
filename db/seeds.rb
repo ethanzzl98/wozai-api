@@ -16,17 +16,19 @@ Venue.create(
       close_time: "18:00 pm",
       discount: "null",
       latitude: 31.233442,
-      longitude: 121.437512
+      longitude: 121.437512,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/le_wagon.JPG"
     },
     {
-      name: "Shed",
+      name: "The Shed",
       address: "698 Shaanxi Bei Lu, Jingan District, Shanghai, China",
       phone: "+86-21-6237-6381",
       open_time: "11:00 am",
       close_time: "2:00 am",
       discount: "null",
       latitude: 31.234511,
-      longitude: 121.45017
+      longitude: 121.45017,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/the_shed.jpg"
     },
     {
       name: "The Grand Yard",
@@ -36,7 +38,8 @@ Venue.create(
       close_time: "2:00 am",
       discount: "null",
       latitude: 31.23508,
-      longitude: 121.44653
+      longitude: 121.44653,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/grand_yard.jpg"
     },
     {
       name: "Gin & Juice",
@@ -46,7 +49,8 @@ Venue.create(
       close_time: "2:00 am",
       discount: "null",
       latitude: 31.235167,
-      longitude: 121.450486
+      longitude: 121.450486,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/gin_juice.jpg"
     },
     {
       name: "Liquid Laundry",
@@ -56,7 +60,8 @@ Venue.create(
       close_time: "21:00 pm",
       discount: "null",
       latitude: 31.21586,
-      longitude: 121.45579
+      longitude: 121.45579,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/liquid_laundry.jpg"
     },
     {
       name: "Beef & Liberty",
@@ -66,7 +71,8 @@ Venue.create(
       close_time: "21:00 pm",
       discount: "null",
       latitude: 31.216576,
-      longitude: 121.456041
+      longitude: 121.456041,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/beef_liberty.jpg"
     },
     {
       name: "Fat Cow",
@@ -76,7 +82,8 @@ Venue.create(
       close_time: "21:00 pm",
       discount: "null",
       latitude: 31.229142,
-      longitude: 121.440718
+      longitude: 121.440718,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/fat_cow.jpg"
     },
     {
       name: "Pie Society",
@@ -86,7 +93,8 @@ Venue.create(
       close_time: "21:00 pm",
       discount: "null",
       latitude: 31.20451,
-      longitude: 121.4306
+      longitude: 121.4306,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/pie_society.jpg"
     },
     {
       name: "Brothers Kebab",
@@ -96,17 +104,19 @@ Venue.create(
       close_time: "21:00 pm",
       discount: "null",
       latitude: 31.229115,
-      longitude: 121.45435
+      longitude: 121.45435,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/brothers_kebab.jpg"
     },
     {
-      name: "Boxing Cat Brewery (Yongfu Lu)",
+      name: "Boxing Cat Brewery",
       address: "82 Fuxing Xi Lu, Xuhui District, Shanghai, China",
       phone: "+86-21-6431 2091",
       open_time: "11:00 am",
       close_time: "21:00 pm",
       discount: "null",
       latitude: 31.21085,
-      longitude: 121.44313
+      longitude: 121.44313,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/boxing_cat.jpg"
     },
     {
       name: "New York Pizza",
@@ -116,7 +126,8 @@ Venue.create(
       close_time: "21:00 pm",
       discount: "null",
       latitude: 31.215026,
-      longitude: 121.44168
+      longitude: 121.44168,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/new_york_pizza.jpeg"
     },
     {
       name: "The Beer Lady",
@@ -126,7 +137,8 @@ Venue.create(
       close_time: "2:00 a.m.",
       discount: "null",
       latitude: 31.239912,
-      longitude: 121.466442
+      longitude: 121.466442,
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/beer_lady.jpg"
     }
   ]
 )
