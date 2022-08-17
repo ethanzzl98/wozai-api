@@ -132,6 +132,7 @@ Venue.create(
 )
 
 Category.create(
+
   [
     {
       name: "Bar",
@@ -162,6 +163,7 @@ Category.create(
     }
   ]
 )
+
 User.create(
   [
     {
@@ -217,6 +219,7 @@ User.create(
     },
   ]
 )
+
 Checkin.create(
   [
     {
