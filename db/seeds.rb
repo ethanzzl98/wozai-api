@@ -220,12 +220,6 @@ Users.create(
 Checkins.create(
   [
     {
-      user_id: 0,
-      venue_id: 12,
-      number_of_visits: 2,
-      public: true
-    },
-    {
       user_id: 1,
       venue_id: 11,
       number_of_visits: 2,
