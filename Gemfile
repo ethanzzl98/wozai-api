@@ -73,3 +73,5 @@ end
 
 gem 'jwt'
 gem 'rest-client'
+gem 'activestorage-aliyun'
+gem 'image_processing'
