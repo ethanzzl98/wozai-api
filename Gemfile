@@ -70,9 +70,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-<<<<<<< HEAD
-=======
-
 gem 'jwt'
 gem 'rest-client'
->>>>>>> b575a4f58e0950eb406472fbcb025a303783bbbf
