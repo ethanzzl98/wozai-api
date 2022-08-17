@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_16_060617) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_16_083504) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,8 +23,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_16_060617) do
   create_table "checkins", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "venue_id", null: false
-    t.integer "number_of_visits"
-    t.boolean "is_public"
+    t.integer "number_of_visits", default: 1
+    t.boolean "is_public", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_checkins_on_user_id"
