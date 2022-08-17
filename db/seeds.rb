@@ -132,7 +132,6 @@ Venue.create(
 )
 
 Category.create(
-
   [
     {
       name: "Bar",
