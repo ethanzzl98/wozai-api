@@ -162,6 +162,7 @@ Category.create(
     }
   ]
 )
+
 User.create(
   [
     {
@@ -217,6 +218,7 @@ User.create(
     },
   ]
 )
+
 Checkin.create(
   [
     {
