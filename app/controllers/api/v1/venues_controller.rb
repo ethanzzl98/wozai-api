@@ -2,7 +2,7 @@ class Api::V1::VenuesController < Api::V1::BaseController
   before_action :set_venue, only: [ :show, :update, :destroy ]
 
   def index
-    @venues = Venue.all
+    @venues = Venue.first(20)
   end
 
   def show

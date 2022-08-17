@@ -7,7 +7,8 @@ class Api::V1::CheckinsController < Api::V1::BaseController
 
   def create
     rand = Random.new
-    user_id = @current_user_id || rand.rand(1..10)
+    puts "current_user_id: #{@current_user.id}"
+    user_id = @current_user.id || rand.rand(1..10)
     venue_id = @venue.id
     @checkin = Checkin.find_by(user_id: user_id, venue_id: venue_id)
     if @checkin

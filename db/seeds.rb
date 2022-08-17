@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Venue.destroy_all
+User.destroy_all
+Checkin.destroy_all
+
+random = Random.new
 
 Venue.create(
   [
@@ -301,3 +306,9 @@ Checkin.create(
     },
   ]
 )
+
+Venue.all.each do |venue|
+  User.all.each do |user|
+    Checkin.create(venue: venue, user: user, number_of_visits: random.rand(100))
+  end
+end
