@@ -215,6 +215,13 @@ Users.create(
     {
       nickname: "Nikki",
     },
+
+    {
+      nickname: "Pavel",
+    },
+    {
+      nickname: "Etienne",
+    },
   ]
 )
 Checkins.create(
