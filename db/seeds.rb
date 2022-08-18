@@ -290,6 +290,6 @@ Checkins.create(
       venue_id: 1,
       number_of_visits: 20,
       public: false
-    },
+    }
   ]
 )
