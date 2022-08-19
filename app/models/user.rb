@@ -1,4 +1,3 @@
 class User < ApplicationRecord
-  has_many :checkins
-  has_many :venues
+  has_many :checkins, dependent: :destroy
 end
