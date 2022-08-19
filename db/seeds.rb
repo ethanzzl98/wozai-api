@@ -195,7 +195,7 @@ venues = [
       latitude: 31.223343,
       longitude: 121.466053,
       categories: ['Restaurant'],
-      photo: "https://https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/homeslice.jpeg"
+      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/homeslice.jpeg"
     },
     {
       name: "The Beer Lady",
@@ -312,31 +312,27 @@ venues = [
       categories: ['Museum'],
       photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/moca.jpeg"
     }
+]
 
-  ]
+venues.each do |venue|
+  temp_venue = Venue.create(
+    name: venue[:name],
+    address: venue[:address],
+    phone: venue[:phone],
+    open_time: venue[:open_time],
+    close_time: venue[:close_time],
+    discount: venue[:discount],
+    latitude: venue[:latitude],
+    longitude: venue[:longitude],
+    photo: venue[:photo]
+  )
+  cats = venue[:categories]
 
-  venues.each do |venue|
-    temp_venue = Venue.create(
-      name: venue[:name],
-      address: venue[:address],
-      phone: venue[:phone],
-      open_time: venue[:open_time],
-      close_time: venue[:close_time],
-      discount: venue[:discount],
-      latitude: venue[:latitude],
-      longitude: venue[:longitude],
-      photo: venue[:photo]
-    )
-    cats = venue[:categories]
-
-    unless cats.nil?
-      cats.each do |category|
-        temp_venue.categories << Category.where(name: category)
-        # temp_venue.save
-      end
-    end
+  cats&.each do |category|
+    temp_venue.categories << Category.where(name: category)
+    # temp_venue.save
   end
-
+end
 
 User.create(
   [
