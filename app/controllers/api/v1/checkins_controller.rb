@@ -17,7 +17,8 @@ class Api::V1::CheckinsController < Api::V1::BaseController
       @checkin = Checkin.new(user_id: user_id, venue_id: venue_id)
     end
     if @checkin.save
-      render :show, status: :created
+      index
+      render :index
     else
       render_error
     end

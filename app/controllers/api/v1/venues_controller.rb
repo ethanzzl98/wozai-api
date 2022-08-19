@@ -6,6 +6,7 @@ class Api::V1::VenuesController < Api::V1::BaseController
   end
 
   def show
+    @checkins = @venue.checkins.order(number_of_visits: :DESC).limit(3)
   end
 
   private
