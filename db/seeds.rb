@@ -401,79 +401,8 @@ User.create(
   ]
 )
 
-Checkin.create(
-  [
-    {
-      user_id: 1,
-      venue_id: 11,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 2,
-      venue_id: 10,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 3,
-      venue_id: 9,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 4,
-      venue_id: 8,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 5,
-      venue_id: 7,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 6,
-      venue_id: 6,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 7,
-      venue_id: 5,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 8,
-      venue_id: 4,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 9,
-      venue_id: 3,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 10,
-      venue_id: 2,
-      number_of_visits: 2,
-      is_public: true
-    },
-    {
-      user_id: 11,
-      venue_id: 1,
-      number_of_visits: 20,
-      is_public: false
-    }
-  ]
-)
-
 Venue.all.each do |venue|
   User.all.each do |user|
-    Checkin.create(venue: venue, user: user, number_of_visits: random.rand(100))
+    Checkin.create(venue: venue, user: user, number_of_visits: random.rand(0..2))
   end
 end
