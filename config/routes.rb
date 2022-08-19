@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      post 'login', to: 'sessions#login', as: :login
+      post 'login', to: 'sessions#login'
+      post 'users/profile', to: 'users#update'
+      get 'users/recent', to: 'users#recent'
+      get 'users/frequent', to: 'users#frequent'
       resources :venues do
         resources :checkins, only: [:index, :create]
       end
