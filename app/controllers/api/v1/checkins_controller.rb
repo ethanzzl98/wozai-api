@@ -9,13 +9,11 @@ class Api::V1::CheckinsController < Api::V1::BaseController
   def create
     rand = Random.new
     puts "current_user_id: #{@current_user.id}"
-    user_id = @current_user.id || rand.rand(1..10)
-    venue_id = @venue.id
 
     if @checkin
       @checkin.number_of_visits += 1
     else
-      @checkin = Checkin.new(user_id: user_id, venue_id: venue_id)
+      @checkin = Checkin.new(user_id: @user_id, venue_id: @venue_id)
     end
     if @checkin.save
       index
@@ -32,7 +30,9 @@ class Api::V1::CheckinsController < Api::V1::BaseController
   end
 
   def set_checkin
-    @checkin = Checkin.find_by(user_id: user_id, venue_id: venue_id)
+    @user_id = @current_user.id || rand.rand(1..10)
+    @venue_id = @venue.id
+    @checkin = Checkin.find_by(user_id: @user_id, venue_id: @venue_id)
   end
 
   def render_error
