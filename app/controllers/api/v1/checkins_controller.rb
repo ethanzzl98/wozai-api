@@ -2,12 +2,11 @@ class Api::V1::CheckinsController < Api::V1::BaseController
   before_action :set_venue, :set_checkin
 
   def index
-    @checkins = @venue.checkins.order(number_of_visits: :DESC).limit(3)
+    @checkins = @venue.checkins.order(number_of_visits: :DESC).limit(5)
     @my_checkin = @checkin ? @checkin.number_of_visits : 0
   end
 
   def create
-    rand = Random.new
     puts "current_user_id: #{@current_user.id}"
 
     if @checkin
@@ -30,7 +29,7 @@ class Api::V1::CheckinsController < Api::V1::BaseController
   end
 
   def set_checkin
-    @user_id = @current_user.id || rand.rand(1..10)
+    @user_id = @current_user.id
     @venue_id = @venue.id
     @checkin = Checkin.find_by(user_id: @user_id, venue_id: @venue_id)
   end
