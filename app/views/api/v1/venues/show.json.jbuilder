@@ -1,4 +1,5 @@
 json.partial! partial: 'api/v1/venues/venue', venue: @venue
+json.my_checkin @my_checkin
 json.leaders do
   json.array! @checkins do |checkin|
     json.extract! checkin.user, :nickname, :id, :avatar_url
