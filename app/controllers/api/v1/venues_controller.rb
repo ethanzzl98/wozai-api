@@ -7,6 +7,8 @@ class Api::V1::VenuesController < Api::V1::BaseController
 
   def show
     @checkins = @venue.checkins.order(number_of_visits: :DESC).limit(3)
+    @checkin = Checkin.find_by(user_id: @current_user.id, venue_id: @venue.id)
+    @my_checkin = @checkin ? @checkin.number_of_visits : 0
   end
 
   private
