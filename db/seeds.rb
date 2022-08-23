@@ -126,18 +126,6 @@ venues = [
       photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/liquid_laundry.jpg"
     },
     {
-      name: "Beef & Liberty",
-      address: "Suite 111, 1376 Nanjing Xi Lu, Jingan District, Shanghai, China",
-      phone: "+86-21-6289 5733",
-      open_time: "11:30 am",
-      close_time: "21:00 pm",
-      discount: "Happy Hour: Every Tuesday to Sunday from 3 pm to 8 pm, all the cocktails, fresh beer and wine in the Shanghai store are only 38 yuan.",
-      latitude: 31.216576,
-      longitude: 121.456041,
-      categories: ['Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/beef_liberty.jpg"
-    },
-    {
       name: "Fat Cow",
       address: "Unit 103, 1/F, No.135 Yanping Road, Jingan District, Shanghai, China",
       phone: "+86-21-5228-2298",
@@ -336,64 +324,64 @@ end
 
 User.create(
   [
-    {
-      nickname: "Jerry",
-    },
-    {
-      nickname: "Larry",
-    },
-    {
-      nickname: "Ethan",
-    },
-    {
-      nickname: "Stu",
-    },
-    {
-      nickname: "Julian",
-    },
-    {
-      nickname: "Annie",
-    },
-    {
-      nickname: "Aza",
-    },
-    {
-      nickname: "Zora",
-    },
-    {
-      nickname: "Lillian",
-    },
-    {
-      nickname: "Michael",
-    },
-    {
-      nickname: "Alex",
-    },
-    {
-      nickname: "Xun",
-    },
-    {
-      nickname: "Heizi",
-    },
-    {
-      nickname: "Anand",
-    },
-    {
-      nickname: "Aggy",
-    },
-    {
-      nickname: "Pablo",
-    },
-    {
-      nickname: "Nikki",
-    },
+    # {
+    #   nickname: "Jerry",
+    # },
+    # {
+    #   nickname: "Larry",
+    # },
+    # {
+    #   nickname: "Ethan",
+    # },
+    # {
+    #   nickname: "Stu",
+    # },
+    # {
+    #   nickname: "Julian",
+    # },
+    # {
+    #   nickname: "Annie",
+    # },
+    # {
+    #   nickname: "Aza",
+    # },
+    # {
+    #   nickname: "Zora",
+    # },
+    # {
+    #   nickname: "Lillian",
+    # },
+    # {
+    #   nickname: "Michael",
+    # },
+    # {
+    #   nickname: "Alex",
+    # },
+    # {
+    #   nickname: "Xun",
+    # },
+    # {
+    #   nickname: "Heizi",
+    # },
+    # {
+    #   nickname: "Anand",
+    # },
+    # {
+    #   nickname: "Aggy",
+    # },
+    # {
+    #   nickname: "Pablo",
+    # },
+    # {
+    #   nickname: "Nikki",
+    # },
 
-    {
-      nickname: "Pavel",
-    },
-    {
-      nickname: "Etienne",
-    },
+    # {
+    #   nickname: "Pavel",
+    # },
+    # {
+    #   nickname: "Etienne",
+    # },
   ]
 )
 
