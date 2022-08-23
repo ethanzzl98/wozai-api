@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       get 'users/recent', to: 'users#recent'
       get 'users/frequent', to: 'users#frequent'
       resources :venues do
-        resources :checkins, only: [:index, :create]
+        resources :checkins, only: %i[index create]
       end
     end
   end
