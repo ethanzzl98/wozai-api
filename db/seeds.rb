@@ -68,7 +68,7 @@ venues = [
     {
       name: "Le Wagon",
       address: "425, Yanping Rd, Jingan District, Shanghai, China",
-      phone: "+86-123123123",
+      phone: "+86-156-1865-3272",
       open_time: "09:00 am",
       close_time: "18:00 pm",
       discount: "Early-bird Discount",
@@ -103,7 +103,7 @@ venues = [
     },
     {
       name: "Gin & Juice",
-      address: "358 Kangding Lu, Jingan District, Shanghai, China",
+      address: "3-106, 358 Kangding Lu, Jingan District, Shanghai, China",
       phone: "+86-180-1763-9776",
       open_time: "11:00 am",
       close_time: "2:00 am",
@@ -127,16 +127,16 @@ venues = [
       photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/liquid_laundry.jpg"
     },
     {
-      name: "Beef & Liberty",
-      address: "Suite 111, 1376 Nanjing Xi Lu, Jingan District, Shanghai, China",
-      phone: "+86-21-6289 5733",
-      open_time: "11:30 am",
-      close_time: "21:00 pm",
-      discount: "Happy Hour: Every Tuesday to Sunday from 3 pm to 8 pm, all the cocktails, fresh beer and wine in the Shanghai store are only 38 yuan.",
-      latitude: 31.216576,
-      longitude: 121.456041,
+      name: "The Smokehouse (Camel)",
+      address: "1/F, Xiangyang Center, 97 Xiangyang Bei Lu, Xuhui District, Shanghai, China",
+      phone: "+86-21-6437-9446",
+      open_time: "5:00 pm",
+      close_time: "2:00 am",
+      discount: "Offers a workday lunchset at 68rmb, which includes a dish plus a soft drink, juice or sweet tea.",
+      latitude: 31.218442,
+      longitude: 121.455482,
       categories: ['Restaurant'],
-      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/beef_liberty.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/smokehouse.jpg"
     },
     {
       name: "Fat Cow",
@@ -252,7 +252,7 @@ venues = [
     {
       name: "The Room Hookah Lounge",
       address: "No.1165 Jiangning Road, Putuo District Room 307 Shengtiandi Building, Shanghai, China",
-      phone: "null",
+      phone: "+86 185-1602-2741",
       open_time: "10:00 am",
       close_time: "2:00 am",
       discount: "null",
@@ -289,16 +289,16 @@ venues = [
     },
 
     {
-      name: "Gu Cheng Park",
-      address: "No.333 Renmin Road, Huangpu District, Shanghai, China",
-      phone: "null",
-      open_time: "5:00 am",
-      close_time: "9:00 pm",
+      name: "Gongqing National Forest Park",
+      address: "228 Nenjiang Rd, Yangpu District, Shanghai, China",
+      phone: "+86-21-6532-8194",
+      open_time: "6:00 am",
+      close_time: "5:00 pm",
       discount: "null",
-      latitude: 31.228457,
-      longitude: 121.493867,
+      latitude: 31.318802,
+      longitude: 121.552193,
       categories: ['Park'],
-      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/gucheng_park.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/gongqing_park.jpeg"
     },
 
     {
