@@ -5,13 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Venue.destroy_all
-User.destroy_all
-Checkin.destroy_all
-Category.destroy_all
-VenueCategory.destroy_all
+# Venue.destroy_all
+# User.destroy_all
+# Checkin.destroy_all
+# Category.destroy_all
+# VenueCategory.destroy_all
 
-random = Random.new
+# random = Random.new
+require "open-uri"
 
 Category.create(
   [
@@ -74,7 +75,7 @@ venues = [
       latitude: 31.233442,
       longitude: 121.437512,
       categories: ['Education'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/le_wagon.JPG"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/le_wagon.JPG"
     },
     {
       name: "The Shed",
@@ -86,7 +87,7 @@ venues = [
       latitude: 31.234511,
       longitude: 121.45017,
       categories: ['Bar', 'Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/the_shed.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/the_shed.jpg"
     },
     {
       name: "The Grand Yard",
@@ -98,7 +99,7 @@ venues = [
       latitude: 31.23508,
       longitude: 121.44653,
       categories: ['Bar', 'Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/grand_yard.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/grand_yard.jpg"
     },
     {
       name: "Gin & Juice",
@@ -110,7 +111,7 @@ venues = [
       latitude: 31.235167,
       longitude: 121.450486,
       categories: ['Bar', 'Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/gin_juice.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/gin_juice.jpg"
     },
     {
       name: "Liquid Laundry",
@@ -123,7 +124,7 @@ venues = [
       latitude: 31.21586,
       longitude: 121.45579,
       categories: ['Bar', 'Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/liquid_laundry.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/liquid_laundry.jpg"
     },
     {
       name: "The Smokehouse (Camel)",
@@ -135,7 +136,7 @@ venues = [
       latitude: 31.218442,
       longitude: 121.455482,
       categories: ['Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/smokehouse.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/smokehouse.jpg"
     },
     {
       name: "Fat Cow",
@@ -147,7 +148,7 @@ venues = [
       latitude: 31.229142,
       longitude: 121.440718,
       categories: ['Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/fat_cow.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/fat_cow.jpg"
     },
     {
       name: "Pie Society",
@@ -159,7 +160,7 @@ venues = [
       latitude: 31.20451,
       longitude: 121.4306,
       categories: ['Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/pie_society.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/pie_society.jpg"
     },
     {
       name: "Brothers Kebab",
@@ -171,7 +172,7 @@ venues = [
       latitude: 31.229115,
       longitude: 121.45435,
       categories: ['Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/brothers_kebab.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/brothers_kebab.jpg"
     },
     {
       name: "Boxing Cat Brewery",
@@ -183,7 +184,7 @@ venues = [
       latitude: 31.21085,
       longitude: 121.44313,
       categories: ['Bar', 'Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/boxing_cat.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/boxing_cat.jpg"
     },
     {
       name: "Homeslice",
@@ -195,7 +196,7 @@ venues = [
       latitude: 31.223343,
       longitude: 121.466053,
       categories: ['Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/homeslice.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/homeslice.jpeg"
     },
     {
       name: "The Beer Lady",
@@ -207,7 +208,7 @@ venues = [
       latitude: 31.239912,
       longitude: 121.466442,
       categories: ['Bar', 'Shopping'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/beer_lady.jpg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/beer_lady.jpg"
     },
     {
       name: "exeQute",
@@ -219,7 +220,7 @@ venues = [
       latitude: 31.233442,
       longitude: 121.437512,
       categories: ['Gym'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/exequte.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/exequte.jpeg"
     },
 
     {
@@ -232,7 +233,7 @@ venues = [
       latitude: 31.219245,
       longitude: 121.450107,
       categories: ['Beauty'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/helen_nails.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/helen_nails.jpeg"
     },
 
     {
@@ -245,7 +246,7 @@ venues = [
       latitude: 31.21529,
       longitude: 121.42027,
       categories: ['Cafe', 'Restaurant'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/home_garden.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/home_garden.jpeg"
     },
 
     {
@@ -258,7 +259,7 @@ venues = [
       latitude: 31.1412,
       longitude: 121.251,
       categories: ['Bar', 'Cafe', 'Hookah'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/hookah.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/hookah.jpeg"
     },
 
     {
@@ -271,7 +272,7 @@ venues = [
       latitude: 31.476617,
       longitude: 121.226709,
       categories: ['Sports'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/shanghai_golf_club.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/shanghai_golf_club.jpeg"
     },
 
     {
@@ -284,7 +285,7 @@ venues = [
       latitude: 31.215616,
       longitude: 121.458145,
       categories: ['Shopping'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/iapm_mall.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/iapm_mall.jpeg"
     },
 
     {
@@ -297,7 +298,7 @@ venues = [
       latitude: 31.318802,
       longitude: 121.552193,
       categories: ['Park'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/gongqing_park.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/gongqing_park.jpeg"
     },
 
     {
@@ -310,7 +311,7 @@ venues = [
       latitude: 31.206149,
       longitude: 121.387795,
       categories: ['Museum'],
-      photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/moca.jpeg"
+      photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/moca.jpeg"
     }
 ]
 
@@ -324,8 +325,10 @@ venues.each do |venue|
     discount: venue[:discount],
     latitude: venue[:latitude],
     longitude: venue[:longitude],
-    photo: venue[:photo]
+    # photo_url: venue[:photo_url]
   )
+  file = URI.open(venue[:photo_url])
+  temp_venue.photo.attach(io: file, filename: "#{temp_venue.name}.jpeg", content_type: 'image/jpeg')
   cats = venue[:categories]
 
   cats&.each do |category|
@@ -334,71 +337,71 @@ venues.each do |venue|
   end
 end
 
-User.create(
-  [
-    {
-      nickname: "Jerry",
-    },
-    {
-      nickname: "Larry",
-    },
-    {
-      nickname: "Ethan",
-    },
-    {
-      nickname: "Stu",
-    },
-    {
-      nickname: "Julian",
-    },
-    {
-      nickname: "Annie",
-    },
-    {
-      nickname: "Aza",
-    },
-    {
-      nickname: "Zora",
-    },
-    {
-      nickname: "Lillian",
-    },
-    {
-      nickname: "Michael",
-    },
-    {
-      nickname: "Alex",
-    },
-    {
-      nickname: "Xun",
-    },
-    {
-      nickname: "Heizi",
-    },
-    {
-      nickname: "Anand",
-    },
-    {
-      nickname: "Aggy",
-    },
-    {
-      nickname: "Pablo",
-    },
-    {
-      nickname: "Nikki",
-    },
+# User.create(
+#   [
+#     {
+#       nickname: "Jerry",
+#     },
+#     {
+#       nickname: "Larry",
+#     },
+#     {
+#       nickname: "Ethan",
+#     },
+#     {
+#       nickname: "Stu",
+#     },
+#     {
+#       nickname: "Julian",
+#     },
+#     {
+#       nickname: "Annie",
+#     },
+#     {
+#       nickname: "Aza",
+#     },
+#     {
+#       nickname: "Zora",
+#     },
+#     {
+#       nickname: "Lillian",
+#     },
+#     {
+#       nickname: "Michael",
+#     },
+#     {
+#       nickname: "Alex",
+#     },
+#     {
+#       nickname: "Xun",
+#     },
+#     {
+#       nickname: "Heizi",
+#     },
+#     {
+#       nickname: "Anand",
+#     },
+#     {
+#       nickname: "Aggy",
+#     },
+#     {
+#       nickname: "Pablo",
+#     },
+#     {
+#       nickname: "Nikki",
+#     },
 
-    {
-      nickname: "Pavel",
-    },
-    {
-      nickname: "Etienne",
-    },
-  ]
-)
+#     {
+#       nickname: "Pavel",
+#     },
+#     {
+#       nickname: "Etienne",
+#     },
+#   ]
+# )
 
-Venue.all.each do |venue|
-  User.all.each do |user|
-    Checkin.create(venue: venue, user: user, number_of_visits: random.rand(0..2))
-  end
-end
+# Venue.all.each do |venue|
+#   User.all.each do |user|
+#     Checkin.create(venue: venue, user: user, number_of_visits: random.rand(0..2))
+#   end
+# end
