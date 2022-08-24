@@ -204,8 +204,8 @@ venues = [
       open_time: "09:00 am",
       close_time: "10:00 pm",
       discount: "Vouchers available for individual classes and newcomers can try it for free.",
-      latitude: 31.233443,
-      longitude: 121.437513,
+      latitude: 31.233691,
+      longitude: ,121.437444,
       categories: ['Gym'],
       photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/exequte.jpeg"
     },
