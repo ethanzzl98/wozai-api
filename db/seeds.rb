@@ -67,7 +67,7 @@ venues = [
     {
       name: "Le Wagon",
       address: "425, Yanping Rd, Jingan District, Shanghai, China",
-      phone: "+86-123123123",
+      phone: "+86-138-1245-8352",
       open_time: "09:00 am",
       close_time: "18:00 pm",
       discount: "Early-bird Discount",
@@ -204,8 +204,8 @@ venues = [
       open_time: "09:00 am",
       close_time: "10:00 pm",
       discount: "Vouchers available for individual classes and newcomers can try it for free.",
-      latitude: 31.233442,
-      longitude: 121.437512,
+      latitude: 31.233443,
+      longitude: 121.437513,
       categories: ['Gym'],
       photo: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/exequte.jpeg"
     },
