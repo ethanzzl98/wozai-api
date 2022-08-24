@@ -2,7 +2,7 @@ class Api::V1::VenuesController < Api::V1::BaseController
   before_action :set_venue, only: %i[show update destroy]
 
   def index
-    @venues = Venue.first(20)
+    @venues = Venue.all
   end
 
   def show
@@ -13,9 +13,16 @@ class Api::V1::VenuesController < Api::V1::BaseController
 
   def create
     @venue = Venue.new(venue_params)
+
+    venue_categories = params[:categories]
+    venue_categories.each do |category|
+      @venue.categories << Category.find_by(name: category)
+    end
+
     if @venue.save
       puts 'Save success'
       render :show, status: :created
+
     else
       puts "Something went wrong\n"
       puts @venue.errors.full_messages
