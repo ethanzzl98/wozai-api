@@ -212,7 +212,7 @@ venues = [
     {
       name: "exeQute",
       address: "425, Yanping Rd, Jingan District, Shanghai, China",
-      phone: "null",
+      phone: "+86-186-1670-0279",
       open_time: "09:00 am",
       close_time: "10:00 pm",
       discount: "Vouchers available for individual classes and newcomers can try it for free.",
