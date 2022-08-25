@@ -5,11 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-# Venue.destroy_all
-# User.destroy_all
-# Checkin.destroy_all
-# Category.destroy_all
-# VenueCategory.destroy_all
+Venue.destroy_all
+User.destroy_all
+Checkin.destroy_all
+Category.destroy_all
+VenueCategory.destroy_all
 
 # random = Random.new
 require "open-uri"
@@ -119,8 +119,7 @@ venues = [
       phone: "+86-21-6445-9589",
       open_time: "11:00 am",
       close_time: "21:00 pm",
-      discount: "Happy Hour: (Sun-Thu From 4-8pm) ¥35 for all craft beer and ¥50 for house wines and cocktails.
-      50% off selected bottle house wine and house spirit after 8pm.",
+      discount: "Happy Hour: (Sun-Thu From 4-8pm) ¥35 for all craft beer and ¥50 for house wines and cocktails. 50% off selected bottle house wine and house spirit after 8pm.",
       latitude: 31.21586,
       longitude: 121.45579,
       categories: ['Bar', 'Restaurant'],
@@ -207,25 +206,25 @@ venues = [
       discount: "Hundreds of beers from around the world!",
       latitude: 31.239912,
       longitude: 121.466442,
-      categories: ['Bar', 'Shopping'],
+      categories: ['Bar'],
       photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/beer_lady.jpg"
     },
     {
       name: "exeQute",
       address: "425, Yanping Rd, Jingan District, Shanghai, China",
-      phone: "null",
+      phone: "+86-186-1670-0279",
       open_time: "09:00 am",
       close_time: "10:00 pm",
       discount: "Vouchers available for individual classes and newcomers can try it for free.",
-      latitude: 31.233442,
-      longitude: 121.437512,
+      latitude: 31.233691,
+      longitude: 121.437444,
       categories: ['Gym'],
       photo_url: "https://wozai-lewagon.oss-cn-shanghai.aliyuncs.com/exequte.jpeg"
     },
 
     {
       name: "Helen Nail Spa",
-      address: "No.6 lane 819, Julu Rd., Jingan District, Shanghai, China",
+      address: "No.6 Lane 819, Julu Rd., Jingan District, Shanghai, China",
       phone: "+86-21-5403-7802",
       open_time: "09:00 am",
       close_time: "10:00 pm",
@@ -277,7 +276,7 @@ venues = [
 
     {
       name: "Iapm Mall",
-      address: "999 Huaihai M Rd | 淮海中路999号 (Shaanxi S. Rd & Yangyang S. Rd, Xúhuì District, Shanghai, China",
+      address: "999 Huaihai Middle Rd. | 淮海中路999号 (Shaanxi S. Rd & Yangyang S. Rd, Xúhuì District, Shanghai, China",
       phone: "+86-21-3326-6700",
       open_time: "9:00 am",
       close_time: "11:00 pm",
