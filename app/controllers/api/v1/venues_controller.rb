@@ -30,6 +30,15 @@ class Api::V1::VenuesController < Api::V1::BaseController
     end
   end
 
+  def upload
+    @venue = Venue.find(params[:venue_id])
+    if @venue.photo.attach(params.require(:file))
+      render json: { msg: 'photo uploaded' }
+    else
+      render json: { err: 'fail to upload' }
+    end
+  end
+
   private
 
   def venue_params
