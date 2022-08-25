@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       post 'users/profile', to: 'users#update'
       get 'users/recent', to: 'users#recent'
       get 'users/frequent', to: 'users#frequent'
+      get 'users/status', to: 'users#status'
       resources :venues do
         post 'upload'
         resources :checkins, only: %i[index create]
