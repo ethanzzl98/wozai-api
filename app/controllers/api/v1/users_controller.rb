@@ -5,12 +5,20 @@ class Api::V1::UsersController < Api::V1::BaseController
   end
 
   def recent
-    recent_count = 3
-    @checkins = @current_user.checkins.order(updated_at: :DESC).limit(recent_count)
+    count = 5
+    @checkins = @current_user.checkins.order(updated_at: :DESC).limit(count)
   end
 
   def frequent
-    recent_count = 3
-    @checkins = @current_user.checkins.order(number_of_visits: :DESC).limit(recent_count)
+    count = 5
+    @checkins = @current_user.checkins.order(number_of_visits: :DESC).limit(count)
+  end
+
+  def status
+    @checkins = @current_user.checkins
+    @total = @checkins.reduce do |a,b|
+      a.number_of_visits + b.number_of_visits
+    end
+    @count = @checkins.count
   end
 end
