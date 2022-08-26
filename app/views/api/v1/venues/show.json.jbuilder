@@ -1,5 +1,6 @@
 json.partial! partial: 'api/v1/venues/venue', venue: @venue
 json.my_checkin @my_checkin
+json.ranking @ranking
 json.last_visit @checkin ? @checkin.updated_at.localtime.strftime("%F") : '1970-01-01'
 json.leaders do
   json.array! @checkins do |checkin|
