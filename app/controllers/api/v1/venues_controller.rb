@@ -9,6 +9,11 @@ class Api::V1::VenuesController < Api::V1::BaseController
     @checkins = @venue.checkins.order(number_of_visits: :DESC).limit(3)
     @checkin = Checkin.find_by(user_id: @current_user.id, venue_id: @venue.id)
     @my_checkin = @checkin ? @checkin.number_of_visits : 0
+    if @checkin
+      @ranking = @venue.checkins.order(created_at: :ASC).find_index { |checkin| checkin.user_id == @current_user.id } + 1
+    else
+      @ranking = 0
+    end
   end
 
   def create

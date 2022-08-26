@@ -17,8 +17,9 @@ class Api::V1::UsersController < Api::V1::BaseController
   def status
     @checkins = @current_user.checkins
     if @checkins
-      @total = @checkins.reduce do |a,b|
-        a.number_of_visits + b.number_of_visits
+      @total = 0
+      @checkins.each do |checkin|
+        @total += checkin.number_of_visits
       end
       @count = @checkins.count
     else
